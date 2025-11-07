@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MOS Hospital — The Future of Global Healthcare." />
+  <title>MOS Hospital | The Future of Global Healthcare</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: radial-gradient(circle at top left, #1E65C1, #154b92, #13A7CB);
+      color: #e0e0e0;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Animated gradient aura background */
+    body::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: conic-gradient(from 180deg at 50% 50%, #00b4d8, #90e0ef, #caf0f8, #0077b6, #00b4d8);
+      animation: rotate 15s linear infinite;
+      z-index: 0;
+      opacity: 0.15;
+      filter: blur(100px);
+    }
+
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 3rem;
+      max-width: 750px;
+      box-shadow: 0 0 40px rgba(0, 200, 255, 0.1);
+    }
+
+    img.logo {
+      width: 160px;
+      margin-bottom: 1.5rem;
+      filter: drop-shadow(0 0 10px rgba(0, 200, 255, 0.6));
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      font-weight: 600;
+      color: #ffffff;
+      text-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-top: 0.8rem;
+      max-width: 600px;
+      color: #cdd6f4;
+      line-height: 1.6;
+    }
+
+    .slogan {
+      margin-top: 1.2rem;
+      font-size: 1.3rem;
+      color: #00b4d8;
+      font-weight: 500;
+      text-shadow: 0 0 10px rgba(0, 180, 216, 0.4);
+    }
+
+    .store-buttons {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .store-buttons img {
+      height: 55px;
+      cursor: pointer;
+      transition: transform 0.3s ease, filter 0.3s ease;
+      filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.3));
+    }
+
+    .store-buttons img:hover {
+      transform: scale(1.1);
+      filter: drop-shadow(0 0 15px rgba(0, 255, 255, 0.6));
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #aaa;
+      position: relative;
+      z-index: 1;
+    }
+
+    footer a {
+      color: #00b4d8;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    footer a:hover {
+      color: #90e0ef;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .slogan {
+        font-size: 1.1rem;
+      }
+      .content {
+        padding: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <img src="images/logo.png" alt="MOS Hospital Logo" class="logo" />
+    <h1>Something Revolutionary Is Coming</h1>
+    <p>MOS Hospital is redefining the future of healthcare — connecting patients, doctors, and hospitals worldwide through intelligent technology and compassionate innovation.</p>
+    <p class="slogan">“Healing the world through intelligence and connection.”</p>
+
+   
+  </div>
+
+  <footer>
+    <p>© 2025 MOS Hospital. All rights reserved.</p>
+    <p>Contact: <a href="mailto:contact@moshospital.org">contact@moshospital.org</a></p>
+  </footer>
+</body>
+</html>
